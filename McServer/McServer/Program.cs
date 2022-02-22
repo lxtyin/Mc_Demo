@@ -53,6 +53,7 @@ namespace MyServer {
                 sclient.Send(bytes);
             } catch(SocketException) {
                 string clientIP = ((IPEndPoint)sclient.RemoteEndPoint).Address.ToString();
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(clientIP + " 失去连接\n");
                 userLogout(sclient);
                 return;
@@ -85,7 +86,10 @@ namespace MyServer {
                 userOnline.Add(sclient);
                 allPlayer.Add(p);
                 available.Add(true);
-                Console.WriteLine(string.Format("Name:{0} Loined.\nIP:{1} Port:{2}\n", p.playername, clientIP, clientPort));
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(string.Format("Name:{0} Loined.\nIP:{1} Port:{2}", p.playername, clientIP, clientPort));
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(DateTime.Now.ToString() + '\n');
             }
         }
 
@@ -98,7 +102,11 @@ namespace MyServer {
             int idx = userOnline.FindIndex(delegate (Socket cl) { return cl == sclient; });
             if(idx == -1) return;
 
-            Console.WriteLine(string.Format("Name:{0} Logout.\nIP:{1} Port:{2}\n", allPlayer[idx].playername, clientIP, clientPort));
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(string.Format("Name:{0} Logout.\nIP:{1} Port:{2}", allPlayer[idx].playername, clientIP, clientPort));
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(DateTime.Now.ToString() + '\n');
+
             sendToAllClient(new Message("Logout", allPlayer[idx].playername));//广播此条登出信息
             userOnline.RemoveAt(idx);
             allPlayer.RemoveAt(idx);
@@ -168,8 +176,11 @@ namespace MyServer {
 
             //开启监听（注意这只是一个开启，不是阻塞方法，参数为最大连接的客户端数量）
             listenfd.Listen(MAX_CONNECT);
-            Console.WriteLine("Server is working..");
-            while(true) {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nServer is working..");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(DateTime.Now.ToString() + '\n');
+            while (true) {
                 Socket sclient = listenfd.Accept();
                 //每收到一个客户端的连接，就为其单独开一个子线程来接收消息
                 Thread newthd = new Thread(new ParameterizedThreadStart(listenClient));
@@ -230,6 +241,7 @@ namespace MyServer {
                             for(int i = 0; i < available.Count; i++) {
                                 if (!available[i]) {
                                     string clientIP = ((IPEndPoint)userOnline[i].RemoteEndPoint).Address.ToString();
+                                    Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine(clientIP + " 长时间没有连接\n");
                                     tmp.Add(userOnline[i]);
                                 }

@@ -8,3 +8,13 @@ C:\Users\86186\Desktop\tyin\Sqrdesk\Mc_Demo\McServer\McServer\obj\Debug\McServer
 C:\Users\86186\Desktop\tyin\Sqrdesk\Mc_Demo\McServer\McServer\obj\Debug\McServer.csproj.CopyComplete
 C:\Users\86186\Desktop\tyin\Sqrdesk\Mc_Demo\McServer\McServer\obj\Debug\McServer.exe
 C:\Users\86186\Desktop\tyin\Sqrdesk\Mc_Demo\McServer\McServer\obj\Debug\McServer.pdb
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\bin\Debug\McServer.exe.config
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\bin\Debug\McServer.exe
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\bin\Debug\McServer.pdb
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Debug\McServer.csproj.AssemblyReference.cache
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Debug\McServer.csproj.CoreCompileInputs.cache
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Debug\McServer.csproj.CopyComplete
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Debug\McServer.exe
+C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Debug\McServer.pdb
