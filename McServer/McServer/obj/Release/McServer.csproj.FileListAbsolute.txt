@@ -7,3 +7,13 @@ C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Release\McServer.csproj.Co
 C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Release\McServer.csproj.CopyComplete
 C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Release\McServer.exe
 C:\Users\lx_tyin\Desktop\McDemo\McServer\McServer\obj\Release\McServer.pdb
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\bin\Release\McServer.exe.config
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\bin\Release\McServer.exe
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\bin\Release\McServer.pdb
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\bin\Release\Newtonsoft.Json.dll
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\bin\Release\Newtonsoft.Json.xml
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\obj\Release\McServer.csproj.AssemblyReference.cache
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\obj\Release\McServer.csproj.CoreCompileInputs.cache
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\obj\Release\McServer.csproj.CopyComplete
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\obj\Release\McServer.exe
+C:\Users\lx_tyin\Desktop\unity\McDemo\McServer\McServer\obj\Release\McServer.pdb

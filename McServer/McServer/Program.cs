@@ -203,8 +203,13 @@ namespace MyServer {
             //主线程中处理请求
             while (true) {
                 if(toDoList.Count > 0) {
-                    Socket from = toDoList.Peek().Key;
-                    Message msg = toDoList.Dequeue().Value;
+                    Socket from;
+                    Message msg;
+                    lock (toDoListLock) {
+                        from = toDoList.Peek().Key;
+                        msg = toDoList.Dequeue().Value;
+                    }
+
                     switch(msg.type) {
                         case "Loin":
                             //登录
