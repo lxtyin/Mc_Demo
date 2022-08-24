@@ -2,7 +2,7 @@
 
 McProject是unity工程文件
 
-McServer是vs服务端工程文件，服务端的发布版本在/bin/release下，请手动创建一个空的map文件夹后启动
+McServer是vs服务端工程文件，服务端的发布版本在/bin/release下
 
 McClient是客户端的发布版本！
 
